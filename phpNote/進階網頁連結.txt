@@ -1,0 +1,24 @@
+Misa老師的進階網頁講義
+https://misadesign.gitbook.io/wordpress/fu-2php-ru-men/ji-ben-yu-fa-jie-gou
+
+登入wp
+輸入127.0.0.1/admin 就可以進去
+
+woocommerce 金流系統(但是台灣不能直接用)
+
+搜尋ecpay安裝 ECPay Payment for WooCommerce、RY WooCommerce Tools
+
+犬哥有教學
+https://frankknow.com/woo-ecpay-settings/
+
+ga
+https://datasupplied.com/google-analytics-4/meet-ga4/
+https://inboundmarketing.com.tw/websites-optimization/google-analytics.html
+
+color space 
+
+https://mycolor.space/?hex=%235EC2AC&sub=1
+
+滑動效果
+https://codepen.io/misayao/pen/vYGWoMB
+scroll-behavior 用css 就有滑動效果

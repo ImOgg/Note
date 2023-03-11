@@ -1,0 +1,132 @@
+.heroimg {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/heroimg.jpg);
+    background-size: cover;
+    background-position: bottom;
+    justify-content: center;
+    align-items: center;
+}
+.heroimg__slogan {
+    color: #fff;
+    font-weight: bold;
+    font-size: 400%;
+    text-shadow: 0 0 10px #000;
+}
+.about {
+    width: 1000px;
+    margin: 50px auto;
+}
+.about__title {
+    text-align: center;
+    font-size: 100%;
+    color: rgb(0, 177, 190);
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.about__content {
+    font-size: 250%;
+}
+.about__link {
+    color: rgb(0, 177, 190);
+    text-decoration: none;
+}
+.about__link:hover {
+    color: rgba(0, 177, 190, 0.8);
+    text-decoration: underline;
+}
+.select {
+    display: flex;
+}
+.select__left {
+    position: relative;
+    width: 50%;
+    height: 80vh;
+    background-image: url(../images/select-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.select__right {
+    position: relative;
+    width: 50%;
+    height: 80vh;
+    background-image: url(../images/select-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.select__overlay {
+    background: rgba(23, 219, 213, 0.5);
+    position: absolute;
+    /* 可以讓 top left right bottom 只要寫一行就用inset就好*/
+    inset: 0;
+    opacity: 0;
+    transition: all .5s;
+}
+.select__left:hover .select__overlay {
+    opacity: 1;
+    
+}
+
+
+.select__right::after {
+    content: '';
+    background: rgba(23, 219, 213, 0.5);
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: all .5s;
+}
+.select__right:hover::after {
+    opacity: 1;
+}
+
+.select__title{
+    position: absolute;
+    bottom: 200px;
+    font-weight: bold;
+    color: #fff;
+    z-index: 9999;
+   
+}
+
+.select__left .select__title{
+    margin-left: -45px;
+    left: 50%;
+}
+.select__right .select__title{
+    /* css會算 可以寫成一行  */
+    left: calc(50% - 41px);
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: -270px;
+    height: 100vh;
+    width: 300px;
+    background: rgba(0,0,0,0.8);
+    transition: all 0.5;
+}
+.menu:hover{
+    right: 0;
+    
+}
+
+.menu_list_link{
+    color: #fff;
+    text-decoration: none;
+    font-size: 32px;
+}
+.menu_list{
+    list-style: none;
+}
+
+.menu_list_link:hover{
+    color:  rgba(255,255,255,0.8);
+}
+
+.menu_list_item{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

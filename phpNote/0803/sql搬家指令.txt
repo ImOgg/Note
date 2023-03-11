@@ -1,0 +1,2 @@
+UPDATE `wp_posts` SET `guid` = REPLACE(guid, 'oldurl.com', 'newurl.com') WHERE `guid` LIKE 'http://oldurl.com/%';
+UPDATE `wp_posts` SET `post_content` = REPLACE(post_content, 'oldurl.com', 'newurl.com') WHERE `post_content` LIKE '%oldurl.com%';

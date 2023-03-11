@@ -1,0 +1,16 @@
+可以在安裝外掛裝 驗證碼 兩個都可以
+recapcha 
+
+hCaptcha for WordPress
+
+分類是大方向 譬如 衣服庫子
+
+tag 是屬性 紅色 黑色 綠色
+
+archive.php category.php tag.php 不一定全部都要
+
+有category.php tag.php 就不會去取用archive.php
+
+代稱建議重新輸入英文 
+
+用中文的話 黨名就不能使用了

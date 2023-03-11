@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="video_box">
+        <div id="player" class="video"></div>
+    </div>
+    
+    <div class="heroimg">
+        <h1 class="heroimg__slogan">
+            Space Travel
+        </h1>
+    </div>
+    <div class="about">
+        <h2 class="about__title">ABOUT</h2>
+        <p class="about__content">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam corrupti unde iure, autem facere enim ratione nostrum fugiat iusto praesentium libero.
+        </p>
+    </div>
+    <div class="owl-carousel">
+        <div>
+            <img src="images/about-1.jpg" alt="">
+        </div>
+        <div>
+            <img src="images/about-2.jpg" alt="">
+        </div>
+        <div>
+            <img src="images/about-3.jpg" alt="">
+        </div>
+    </div>
+    <div class="select">
+        <div class="select__box select__left">
+            <div class="select__title">
+                SUNNY
+            </div>
+        </div>
+        <div class="select__box select__right">
+            <div class="select__title">
+                NIGHT
+            </div>
+        </div>
+    </div>
+    <div class="btn-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="menu">
+        <a href="#" class="menu__item">HOME</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+        // 2. This code loads the IFrame Player API code asynchronously.
+        var tag = document.createElement('script');
+  
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  
+        var player;
+        function onYouTubeIframeAPIReady() {
+          player = new YT.Player('player', {
+            videoId: 'hWWPmxrPYmc',
+            events: {
+              'onReady': onPlayerReady,
+              'onStateChange': onPlayerReady
+            }
+          });
+        }
+  
+        function onPlayerReady(event) {
+          event.target.playVideo();
+        }
+      </script>
+</body>
+</html>
