@@ -22,4 +22,8 @@ react檔案基礎設定
 可以從 左下角的齒輪 - > setting - > 右上角 open settings (json)
 ```
 
-ES7+ React/Redux/React-Native snippets 裝一下
+### ES7+ React/Redux/React-Native snippets 
+```
+這個超讚 只要有裝 只要在jsx裡面打
+rafce這個就可以幫我們把架構準備好
+```
